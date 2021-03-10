@@ -1,0 +1,503 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #272727;
+}
+
+/* General */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-bottom: 140px;
+}
+
+.active {
+    color: #e96453;
+}
+
+strong {
+    font-weight: 800;
+}
+
+/* Header */
+
+.header {
+    padding: 60px 0;
+    background-image: linear-gradient(to top, rgba(46, 39, 39, 0.685), rgba(43, 96, 109, 0.534)), url("../assets/media/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: 0 0;
+    text-align: center;
+}
+
+.top-icons a {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    color: #272727;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.home-heading {
+    padding-top: 96px;
+    text-transform: uppercase;
+}
+
+.header-tab {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand img{
+    padding-right: 20px;
+}
+
+.header-tab span {
+    font-size: 32px;
+    color: #ed705f;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-nav a{
+    font-size: 20px;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+
+.home-heading {
+    padding-top: 240px;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+
+.home-heading hr {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.home-description {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.home-button {
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    background-color: #ea513e;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* Services */
+
+.circle {
+    margin: 20px 10px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.image-switch-circle {
+    display: flex;
+    justify-content: center;
+}
+
+.second-circle {
+    background-color: #8e8e8e;
+}
+
+.third-circle {
+    background-color: #7b7b7b;
+}
+
+.section-heading {
+    padding: 120px 0 20px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.service-icons {
+    width: 300px;
+    height: 300px;    
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+.service-icons a {
+    color: white;
+}
+.code {
+    background-color: #5cbd9d;
+}
+
+.plane {
+    background-color: #e67f31;
+}
+
+.university {
+    background-color: #3998db;
+}
+
+.flask {
+    background-color: #68cd73;
+}
+
+/* Portfolio */
+
+.column {
+    flex: 0 1 22%;
+    margin: 24px 0;
+}
+
+.portfolio-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Team */
+
+.col {
+    flex: 0 1 30%;
+    margin: 16px;    
+}
+
+.team-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.design-heading {
+    padding-top: 120px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.design-heading em {
+    font-weight: 800;
+}
+
+.design-description {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 48px;
+    color: #888888;
+}
+
+.paragraph {
+    flex: 0 1 60%;
+    font-size: 20px;
+    color: #888888;
+}
+
+.paragraph p {
+    padding-bottom: 16px;
+}
+
+.progress-section {
+    flex: 0 1 35%;
+    align-self: stretch;
+}
+
+.progress-section .progress {
+    background-color: #e7e7e7;
+    margin-bottom: 24px;
+  }
+  
+.progress-section .progress-length {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    background-color: #ea513e;
+}
+
+.photoshop {
+    width: 90%;
+}
+
+.html-css,.marketing {
+    width: 80%;    
+}
+
+.development {
+    width: 70%;
+}
+
+/* Contact */
+
+.user-details {
+    flex: 0 1 33%;
+    align-self: stretch;
+}
+
+iframe {
+    margin-bottom: 24px;
+}
+
+.paragraph .template {
+    color: #1a74b4;
+}
+
+.paragraph .mo {
+    color: #128f21;
+}
+
+.userinfo {
+    width: 100%;
+    height: 60px;
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    height: 120px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.send-message {
+    width: 100%;
+    height: 48px;
+    background-color: #ea513e;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+/* Footer */
+
+.footer {
+    padding: 40px 0;
+}
+
+.footer .container {
+    border-top: 2px solid #ddd6d6;
+    padding-top: 48px;
+}
+
+.copyright {
+    color: #6b6b6b;
+}
+
+.btn-top {
+    color: #f7f7f4;
+    background-color: #ea513e;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 3px 5px rgba(31, 30, 30, 0.4);
+}
+
+/* Gallery Page */
+
+/* Aside */
+
+.aside-head {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+.sidebar {
+    background-color: #ea513e;
+    width: 500px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    height: 100vh;
+}
+
+.aside-heading {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.home-btn {
+    font-size: 16px;
+    padding: 6px 16px;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.aside-about {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.aside-description {
+    font-size: 24px;
+    padding: 20px 0;
+    line-height: 1;
+}
+
+.aside-links {
+    display: flex;
+}
+
+.aside-links a {
+    color: white;
+    padding-top: 6px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Gallery */
+
+.gallery {
+    flex: 0 1 70%;
+    align-self: stretch;
+    height: 100vh;
+    overflow: auto;
+}
+
+.gallery-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 32px 0;
+}
+
+.gallery-column {
+    width: 45%;
+    align-self: stretch;
+}
+
+.gallery-column img {
+    width: 100%;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.gallery .flex {
+    justify-content: space-evenly;
+}
